@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/monLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Faites votre choix :"/>
+
+        <RadioGroup
+            android:id="@+id/rgGroup1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" >
+            <RadioButton android:height="20dp"
+                android:id="@+id/RB1"
+                android:text="Choix 1"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <RadioButton android:id="@+id/RB2"
+                android:text="Choix 2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <RadioButton android:id="@+id/RB3"
+                android:text="Choix 3"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
