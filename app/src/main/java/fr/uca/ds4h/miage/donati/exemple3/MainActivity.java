@@ -28,12 +28,14 @@ public class MainActivity extends AppCompatActivity {
         });*/
 
         // La même chose mais avec une expression lambda
-        group.setOnCheckedChangeListener( (g, id) ->
-            {
-                RadioButton bt = (RadioButton) findViewById(id);
-                Toast.makeText(g.getContext(),
-                        "vous avez cliqué sur " + bt.getText(),
-                        Toast.LENGTH_SHORT).show();
-            });
+        group.setOnCheckedChangeListener(
+                (g, id) ->
+                    {
+                        RadioButton bt = (RadioButton) findViewById(id);
+                        Toast.makeText(g.getContext(),
+                                "vous avez cliqué sur " + bt.getText(),
+                                Toast.LENGTH_SHORT).show();
+                    }
+            );
     }
 }
